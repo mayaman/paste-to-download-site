@@ -1,6 +1,6 @@
 "use strict";
 /**
- * @author: mayaman
+ * @author: Maya Man
  */
 
 document.body.addEventListener("paste", handlePaste);
@@ -22,10 +22,11 @@ function handlePaste(e) {
   // Display pasted data and download
   document.getElementById("title").src = "/assets/downloaded.png";
   document.getElementById("sparkles").src = "/assets/sparkle_2.png";
-  // document.getElementById('download-msg').style.display = 'block';
 
-  let allImages = document.getElementsByTagName("img");
-
+  // Get images pasted
+  let parser = new DOMParser();
+  let dom = parser.parseFromString(pastedData, "text/html");
+  let allImages = dom.getElementsByTagName('img');
   for (let i = 0; i < allImages.length; i++) {
     let img = allImages[i];
     let imageSource = img.src;
