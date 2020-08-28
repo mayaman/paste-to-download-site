@@ -20,7 +20,7 @@ function handlePaste(e) {
   pastedData = clipboardData.getData("text/html");
 
   // Display pasted data and download
-  document.getElementById("title").src = "/assets/downloaded.png";
+  document.getElementById("title").innerText = "DOWNLOADED!";
   document.getElementById("sparkles").src = "/assets/sparkle_2.png";
 
   // Get images pasted

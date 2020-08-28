@@ -12,17 +12,18 @@
 <body>
   <div class="apple" id="paste-div">
     <div class="main-container" id="home-container">
-      <button onclick="toggleView()" id="question-button">
+      <button aria-label="Click to see more info" onclick="toggleView()" id="question-button">
         ?
       </button>
       <div id="download-msg">DOWNLOADED!</div>
-      <img id="title" src="/assets/title.png" aria-label="Instructions that read PASTE HERE TO DOWNLOAD"
-        alt="" />
+      <!-- <img id="title" src="/assets/title.png" aria-label="Instructions that read PASTE HERE TO DOWNLOAD"
+        alt="" /> -->
+        <div id="title">PASTE HERE TO DOWNLOAD</div>
       <img id="sparkles" src="/assets/sparkle_1.png" alt="" />
       <img id="download" src="/assets/download_icon.gif" alt="" />
     </div>
     <div class="main-container apple-background" id="info-container">
-      <button onclick="toggleView()" id="x-button">
+      <button aria-label="Click to close the info dialog" onclick="toggleView()" id="x-button">
         X
       </button>
       <div class="info">

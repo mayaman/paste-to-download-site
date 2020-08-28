@@ -37,13 +37,13 @@ div#paste-div img#download {
   width: 210px;
   position: absolute;
   left: 50%;
-  top: 53%;
+  top: 60%;
   transform: translate(-50%, -50%);
 }
 img#sparkles {
   width: 90%;
   position: absolute;
-  top: 35%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -67,9 +67,13 @@ img#sparkles {
   position: relative;
 }
 #title {
-  height: 10%;
+  width: 90%;
+  font-weight: bold;
+  font-size: 90px;
+  line-height: 133px;
+  letter-spacing: 0.06em;
   position: absolute;
-  top: 35%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
