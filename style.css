@@ -186,7 +186,7 @@ button:hover {
   padding-left: 100%;
   /* show the marquee just outside the paragraph */
   will-change: transform;
-  animation: marquee 60s linear infinite;
+  animation: marquee 45s linear infinite;
 }
 
 .marquee span a {
@@ -200,8 +200,8 @@ button:hover {
 
 
 @keyframes marquee {
-  0% { transform: translate(-50%, 0); }
-  100% { transform: translate(-100%, 0); }
+  0% { transform: translate(-30%, 0); }
+  100% { transform: translate(-70%, 0); }
 }
 
 
