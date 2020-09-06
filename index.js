@@ -72,7 +72,19 @@ function downloadResource(url, filename) {
 function toggleView() {
   let infoContainer = document.getElementById('info-container');
   let homeContainer = document.getElementById('home-container');
-  console.log('style: ', infoContainer.style.display);
+
+  if (infoContainer.style.display == 'none' || infoContainer.style.display == '') {
+    infoContainer.style.display = 'block';
+    homeContainer.style.display = 'none';
+  } else {
+    infoContainer.style.display = 'none';
+    homeContainer.style.display = 'block';
+  }
+}
+
+function toggleMobileView() {
+  let infoContainer = document.getElementById('mobile-info-container');
+  let homeContainer = document.getElementById('mobile-home-container');
 
   if (infoContainer.style.display == 'none' || infoContainer.style.display == '') {
     infoContainer.style.display = 'block';
