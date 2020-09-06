@@ -247,7 +247,7 @@ div#mobile-div {
     border: 4px solid #FF4A15;
     box-sizing: border-box;
     border-radius: 20px;
-    height: 90%;
+    height: 82%;
     margin: 1.5% 2%;
     position: relative;
   }
@@ -271,5 +271,35 @@ div#mobile-div {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  button {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FF4A15;
+    background: none;
+    border: none;
+    /* width: 30px;
+    height: 30px; */
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    }
+  #question-button {
+    border: none;
+    border-radius: 15px;
+    margin: 8px 3px;
+  }
+  #x-button {
+    border: none;
+    border-radius: 15px;
+    color:#EDC6EE;
+    background: none;
+    margin: 8px 3px;
   }
 }
